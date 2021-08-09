@@ -3,6 +3,9 @@
 
   ## Description 
   This application will accept user input through the command line and output an outline of the employees the user has
+
+  ## Tutorial Video
+  https://drive.google.com/file/d/1X5xFfvbJthFy_fgaKgHosqPrSTQVv0Ko/view?usp=sharing
   
   ## Table of Contents
   1. [Installation](#Installation)
