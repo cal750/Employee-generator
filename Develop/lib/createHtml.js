@@ -1,7 +1,5 @@
 const path = require("path");
 const fs = require("fs");
-const { prependOnceListener } = require("process");
-
 const createDir = path.resolve(__dirname, "../create");
 const render = (people) => {
     const html = []; 
