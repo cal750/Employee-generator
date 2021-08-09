@@ -14,3 +14,30 @@ const render = require("./lib/createHtml")
 //addding in directory path and logic
 const output = path.resolve(__dirname, "output");
 outputPath = path.join(output, "user.html")
+const render = require("./lib/createHtml");
+
+const questions = [{
+        type: "input",
+        name: "name",
+        message: "What is the team member's name?",
+      },
+    
+      {
+        type: "input",
+        name: "id",
+        message: "What the team member's id?",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is the team member's email?",
+      },
+      {
+        type: "list",
+        name: "role",
+        message: "What is team member's role?",
+        choices: ["Manager", "Engineer", "Intern"],
+      },
+    ];
+    
+    
