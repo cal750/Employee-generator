@@ -28,6 +28,7 @@ const renderManager = (manager) => {
     return template;
   };
 
+//searches for the individual parts of the template html files to retrieve data and append them
   const renderEngineer = (engineer) => {
     let template = fs.readFileSync(path.resolve(templatesDir, "newEngineer.html"), "utf8");
     template = replacePlaceholders(template, "name", engineer.getName());
@@ -35,9 +36,11 @@ const renderManager = (manager) => {
     template = replacePlaceholders(template, "email", engineer.getEmail());
     template = replacePlaceholders(template, "id", engineer.getId());
     template = replacePlaceholders(template, "github", engineer.getGithub());
+     //returns the new edited template
     return template;
   };
 
+  //searches for the individual parts of the template html files to retrieve data and append them
   const renderIntern = (intern) => {
     let template = fs.readFileSync(path.resolve(templatesDir, "newIntern.html"), "utf8");
     template = replacePlaceholders(template, "name", intern.getName());
@@ -45,6 +48,7 @@ const renderManager = (manager) => {
     template = replacePlaceholders(template, "email", intern.getEmail());
     template = replacePlaceholders(template, "id", intern.getId());
     template = replacePlaceholders(template, "school", intern.getSchool());
+     //returns the new edited template
     return template;
   };
 
