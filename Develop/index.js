@@ -7,3 +7,10 @@ const path = require("path");
 const newIntern = require("./lib/newIntern");
 const newEngineer = require("./lib/newEngineer");
 const newManager = require("./lib/newManager");
+
+//adding the js that appends the html aspects together
+const render = require("./create/createHtml")
+
+//addding in directory path and logic
+const output = path.resolve(__dirname, "output");
+outputPath = path.join(output, "user.html")
