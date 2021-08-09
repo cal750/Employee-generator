@@ -1,6 +1,7 @@
-const NewPerson = require("./NewPerson");
+//imports the base constructor from newPerson
+const newPerson = require("./NewPerson");
 
-class newEngineer extends NewPerson {
+class newEngineer extends newPerson {
     constructor(name, id, email, github) {
         //shorthand for return.template
         super(name, id, email);
@@ -10,7 +11,8 @@ class newEngineer extends NewPerson {
     getGIthub() {
         return this.github;
     }
-    getRole() {
+
+    getBase() {
         return "Engineer";
     }
 }
